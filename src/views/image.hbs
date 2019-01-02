@@ -32,11 +32,11 @@
     <div class="card-header d-flex justify-content-between align-items-center">
         <h3>Comment</h3>
         <button class="btn btn-info" id="btn-toggle-comment">
-            <i class="fa fa-comment"></i> Post a Comment
+            <i class="fa fa-comments"></i> Post a Comment
         </button>
     </div>
     <div class="card-body">
-        <blockquote>
+        <blockquote id="post-comment">
             <form action="/images/{{ image.uniqueId }}/comment" method="POST">
                 <div class="form-group">
                     <input type="text" class="form-control" name="name" placeholder="Name">
