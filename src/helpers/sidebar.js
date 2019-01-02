@@ -2,7 +2,7 @@ const Stats = require('./stats');
 const Images = require('./images');
 const Comments = require('./comments');
 
-module.exports = async function(viewModel) {
+module.exports = async viewModel => {
     const result = await Promise.all([
         Stats(),
         Images.popular(),
